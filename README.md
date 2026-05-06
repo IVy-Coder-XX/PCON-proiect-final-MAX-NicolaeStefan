@@ -1,22 +1,31 @@
-# (Titlul)
-(Scurtă descriere.)
+# Audio Visualizer in MAX/MSP cu integrare WLED
+Aplicatia este un audio visualizer pentru muzica de tip rock/metal cu integrare [WLED](https://kno.wled.ge), ce prezinta atat un visualizer generat in aplicatie in functie de diferitele instrumente prezente intr-o melodie, dar si integrare cu WLED, o aplicatie open-source pentru control al luminilor LED.
 
-## (Instalare)
-...
+## Pasi de instalare si dependente externe
+1. Se instaleaza aplicatia [MAX MSP 8/9](https://cycling74.com/downloads) ( compatibilitatea cu versiuni anterioare nu este verificata ).
+2. Se instaleaza dependentele [CNMAT Externals](https://cycling74.com/packages/cnmat-externals), sau direct din package manager-ul aplicatiei MAX.
+3. **optional - integrare WLED** Modul compatibil WLED cu suport pentru protocolul DDP. Un exemplu : [controller](https://www.wifistore.ro/cumpara/controler-inteligent-gledopto-gl-c-211wl-wi-fi-pwm-wled-pentru-benzi-125142?utm_source=portal&utm_medium=web&utm_campaign=google_xml&gad_source=1&gad_campaignid=22591662394&gclid=CjwKCAjwzevPBhBaEiwAplAxvuhdfeAYuVsK8ktMdyWnlyRsWtULtT98OvBPPOg5_eOYPGzWPKQ7-RoC0IEQAvD_BwE)
+4. **optional - banda LED RGB sau RGB(W)** Se poate utiliza orice banda led din cele doua tipuri mentionate, iar pentru instalare se urmeaza pasii dati de producatorul modului WLED . 
 
 ## (Utilizare)
-...
+1. Se ruleaza script-ul principal **_MAIN_MetalVis** in MAX.
+2. **optional - integrare WLED** Se verifica conexiunea WLED in scriptul principal de MAX, prin accesarea ip-ului modulului mentionat anterior (hostname-ul specific) intr-un browser si daca coincide cu cel prezent in script, daca nu, se schimba la cel corect.
+3. Se incarca in modulul playlist~ o melodie la alegere prin drag-and-drop sau se alege din cele ce se gasesc in folder-ul songs al proiectului pe care le-am pus la dispozitie.
+4. Se da start la melodie si se observa vizualizatorul integrat si/sau jocul de lumini oferit de banda LED
 
 ## (Istoric)
 
-(13.05) ...
+(06.05) Am prototipat aplicatia initiala ce raspunde la doua instrumente : 
+1. Toba "kick" ce face camera sa se miste pe axele XoY si toba "snare" ce face sa apara un flash alb in background.
+2. Chitara ce adauga chromatic aberation pe cercul central al visualizer-ului.
 
-(3.06) ...
-
-(X.06) ...
 
 ## (Link-uri)
-...
+1. [MAX MSP 8/9](https://cycling74.com/downloads)
+2. [CNMAT Externals](https://cycling74.com/packages/cnmat-externals)
+3. [WLED](https://kno.wled.ge)
+4. [controller](https://www.wifistore.ro/cumpara/controler-inteligent-gledopto-gl-c-211wl-wi-fi-pwm-wled-pentru-benzi-125142?utm_source=portal&utm_medium=web&utm_campaign=google_xml&gad_source=1&gad_campaignid=22591662394&gclid=CjwKCAjwzevPBhBaEiwAplAxvuhdfeAYuVsK8ktMdyWnlyRsWtULtT98OvBPPOg5_eOYPGzWPKQ7-RoC0IEQAvD_BwE)
+
 
 # Dezvoltarea proiectului
 
