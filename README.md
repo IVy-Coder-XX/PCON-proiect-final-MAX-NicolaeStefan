@@ -18,6 +18,10 @@ Aplicatia este un audio visualizer pentru muzica de tip rock/metal cu integrare 
 (06.05) Am prototipat aplicatia initiala ce raspunde la doua instrumente : 
 1. Toba "kick" ce face camera sa se miste pe axele XoY si toba "snare" ce face sa apara un flash alb in background.
 2. Chitara ce adauga chromatic aberation pe cercul central al visualizer-ului.
+(25.05) Update major :
+1. Efecte multiple ce pot fi utilizate sau nu dupa necesitatea utilizatorului.
+2. Detectie snare imbunatatita.
+3. Integrare WLED prin DDP.
 
 
 ## (Link-uri)
