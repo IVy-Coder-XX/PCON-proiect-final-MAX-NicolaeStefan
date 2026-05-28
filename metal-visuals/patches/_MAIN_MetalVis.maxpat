@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 213.0, 207.0, 1251.0, 550.0 ],
+		"rect" : [ 34.0, 77.0, 1697.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,352 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 511.0, 111.0, 55.0, 22.0 ],
+					"text" : "adc~ 1 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 74.0, 496.0, 172.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"autostart" : 0,
+						"defer" : 0,
+						"watch" : 0
+					}
+,
+					"text" : "node.script ddp_udp_sender.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 223.0, 422.0, 39.0, 22.0 ],
+					"text" : "snare"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 25.5, 380.0, 64.0, 22.0 ],
+					"text" : "script start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 24.0, 311.0, 67.0, 22.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 146.0, 555.0, 85.0, 22.0 ],
+					"text" : "print node_out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 120.0, 422.0, 29.5, 22.0 ],
+					"text" : "kick"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 388.0, 380.0, 89.0, 22.0 ],
+					"text" : "wled_controller"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 542.0, 231.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 542.0, 641.0, 73.0, 22.0 ],
+					"text" : "slide 10. 10."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 446.0, 641.0, 73.0, 22.0 ],
+					"text" : "slide 10. 10."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 1006.0, 510.0, 256.0, 22.0 ],
+					"text" : "jit.gl.texture metal_scene @name memory_tex"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 816.0, 687.0, 826.0, 22.0 ],
+					"text" : "jit.gl.videoplane fbo_node @texture memory_tex @depth_enable 0 @layer -1 @position 0. 0. -3. @scale 5. 5. 1. @rotate 0.3 0. 0. 1. @color 0.5 0.5 0.5 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1097.0, 614.0, 61.0, 22.0 ],
+					"text" : "enable $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1097.0, 569.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 346.0, 834.0, 90.0, 22.0 ],
+					"text" : "scale 0. 1. 1. 4."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 74.0, 838.0, 71.0, 22.0 ],
+					"text" : "jit.op @op *"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 1027.0, 780.0, 584.0, 22.0 ],
+					"text" : "jit.gl.gridshape fbo_node @name cioburi @shape cube @scale 0.02 0.02 0.02 @color 1 1 1 1 @automatic 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 74.0, 880.0, 362.0, 22.0 ],
+					"text" : "jit.gl.multiple fbo_node 1 @targetname cioburi @glparams position"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 74.0, 798.0, 153.0, 22.0 ],
+					"text" : "jit.map @map 0. 1. -80. 80."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 74.0, 752.0, 122.0, 22.0 ],
+					"text" : "jit.noise 3 float32 500"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 74.0, 709.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, 668.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 74.0, 554.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 412.0, 301.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 343.333333333333314, 231.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1022.0, 439.0, 78.0, 22.0 ],
+					"text" : "rorschach $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1022.0, 396.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "list", "list" ],
-					"patching_rect" : [ 185.0, 120.0, 173.0, 22.0 ],
+					"patching_rect" : [ 173.0, 142.0, 173.0, 22.0 ],
 					"text" : "omx.comp~ @agc 1 @limiter 1"
 				}
 
@@ -57,7 +397,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.0, 292.0, 75.0, 22.0 ],
+					"patching_rect" : [ 538.0, 387.0, 75.0, 22.0 ],
 					"text" : "snare_hit $1"
 				}
 
@@ -69,7 +409,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 283.0, 250.0, 41.0, 22.0 ],
+					"patching_rect" : [ 538.0, 344.0, 41.0, 22.0 ],
 					"text" : "line 0."
 				}
 
@@ -81,7 +421,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.0, 204.0, 45.0, 22.0 ],
+					"patching_rect" : [ 538.0, 301.0, 45.0, 22.0 ],
 					"text" : "1, 0 80"
 				}
 
@@ -93,7 +433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 663.0, 274.0, 145.0, 22.0 ],
+					"patching_rect" : [ 476.0, 798.0, 145.0, 22.0 ],
 					"text" : "jit.gl.camera metal_scene"
 				}
 
@@ -105,7 +445,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 484.0, 97.0, 22.0 ],
+					"patching_rect" : [ 476.0, 752.0, 97.0, 22.0 ],
 					"text" : "position $1 $2 4."
 				}
 
@@ -117,7 +457,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.0, 484.0, 55.0, 22.0 ],
+					"patching_rect" : [ 476.0, 703.0, 55.0, 22.0 ],
 					"text" : "pak 0. 0."
 				}
 
@@ -129,8 +469,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 428.0, 107.0, 22.0 ],
-					"text" : "scale 0 99 -0.5 0.5"
+					"patching_rect" : [ 542.0, 602.0, 107.0, 22.0 ],
+					"text" : "scale 0 99 -0.1 0.1"
 				}
 
 			}
@@ -141,8 +481,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 77.0, 428.0, 107.0, 22.0 ],
-					"text" : "scale 0 99 -0.5 0.5"
+					"patching_rect" : [ 412.0, 602.0, 107.0, 22.0 ],
+					"text" : "scale 0 99 -0.1 0.1"
 				}
 
 			}
@@ -153,7 +493,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.0, 387.0, 73.0, 22.0 ],
+					"patching_rect" : [ 542.0, 565.0, 73.0, 22.0 ],
 					"text" : "random 100"
 				}
 
@@ -165,7 +505,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 387.0, 73.0, 22.0 ],
+					"patching_rect" : [ 412.0, 570.0, 73.0, 22.0 ],
 					"text" : "random 100"
 				}
 
@@ -178,7 +518,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 91.0, 342.0, 24.0, 24.0 ]
+					"patching_rect" : [ 412.0, 519.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -200,7 +540,7 @@
 						}
 ,
 						"classnamespace" : "jit.gen",
-						"rect" : [ 333.0, 253.0, 893.0, 450.0 ],
+						"rect" : [ 307.0, 286.0, 893.0, 450.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -230,7 +570,7 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"code" : "// Parametrii de control \r\nParam kick_hit(0.);\r\nParam snare_hit(0.);\r\n\r\n// --- 1. ABERATIA CROMATICA (KICK) ---\r\noffset_amount = vec(0.08, 0.0);\r\n\r\nuv_r = norm + (offset_amount * kick_hit);\r\nuv_g = norm; \r\nuv_b = norm - (offset_amount * kick_hit);\r\n\r\nr = sample(in1, uv_r).r;\r\ng = sample(in1, uv_g).g;\r\nb = sample(in1, uv_b).b;\r\n\r\n// --- 2. ZGOMOTUL DIGITAL (KICK) ---\r\nseed = norm.x * 12.9898 + norm.y * 78.233;\r\nrandom_val = fract(sin(seed) * 43758.5453);\r\nzgomot = (random_val - 0.5) * (kick_hit * 0.6);\r\n\r\n// Aplicam zgomotul peste semnalul deformat\r\nr_final = r + zgomot;\r\ng_final = g + zgomot;\r\nb_final = b + zgomot;\r\n\r\n// --- 3. NEGATIVE STROBE (SNARE) ---\r\n\r\nr_out = mix(r_final, 1.0 - r_final, snare_hit);\r\ng_out = mix(g_final, 1.0 - g_final, snare_hit);\r\nb_out = mix(b_final, 1.0 - b_final, snare_hit);\r\n\r\n// vectorul final\r\nout1 = vec(r_out, g_out, b_out, 1.0);",
+									"code" : "// Parametrii tai de control din Max\r\nParam kick_hit(0.);\r\nParam snare_hit(0.);\r\nParam rorschach(0.); // Noul nostru buton! 0 = Oprit, 1 = Pornit\r\n\r\n// --- SIMETRIA OCULTA ---\r\n// Calculam varianta oglindita a coordonatelor (tragem partea dreapta pe stanga)\r\nuv_simetric = vec(abs(norm.x - 0.5) + 0.5, norm.y);\r\n\r\n// mix() alege intre normal (daca rorschach=0) sau simetric (daca rorschach=1)\r\nuv_baza = mix(norm, uv_simetric, rorschach);\r\n\r\n// --- 1. ABERATIA CROMATICA (KICK) ---\r\noffset_amount = vec(0.08, 0.0);\r\n\r\n// Folosim uv_baza in loc de norm pentru a deforma imaginea PESTE simetrie\r\nuv_r = uv_baza + (offset_amount * kick_hit);\r\nuv_g = uv_baza; \r\nuv_b = uv_baza - (offset_amount * kick_hit);\r\n\r\nr = sample(in1, uv_r).r;\r\ng = sample(in1, uv_g).g;\r\nb = sample(in1, uv_b).b;\r\n\r\n// --- 2. ZGOMOTUL DIGITAL (KICK) ---\r\n// Modificam putin seed-ul ca zgomotul sa arate bine si cand e simetric\r\nseed = uv_baza.x * 12.9898 + uv_baza.y * 78.233;\r\nrandom_val = fract(sin(seed) * 43758.5453);\r\nzgomot = (random_val - 0.5) * (kick_hit * 0.6);\r\n\r\nr_final = r + zgomot;\r\ng_final = g + zgomot;\r\nb_final = b + zgomot;\r\n\r\n// --- 3. NEGATIVE STROBE (SNARE) ---\r\nr_out = mix(r_final, 1.0 - r_final, snare_hit);\r\ng_out = mix(g_final, 1.0 - g_final, snare_hit);\r\nb_out = mix(b_final, 1.0 - b_final, snare_hit);\r\n\r\nout1 = vec(r_out, g_out, b_out, 1.0);",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -284,7 +624,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 663.0, 396.0, 120.0, 22.0 ],
+					"patching_rect" : [ 860.0, 510.0, 120.0, 22.0 ],
 					"text" : "jit.gl.pix metal_scene"
 				}
 
@@ -297,7 +637,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 663.0, 455.0, 166.0, 36.0 ],
+					"patching_rect" : [ 854.0, 573.0, 166.0, 36.0 ],
 					"text" : "jit.gl.videoplane metal_scene @transform_reset 2"
 				}
 
@@ -309,7 +649,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 663.0, 323.0, 434.0, 22.0 ],
+					"patching_rect" : [ 703.0, 324.0, 434.0, 22.0 ],
 					"text" : "jit.gl.node metal_scene @name fbo_node @capture 1 @erase_color 0. 0. 0. 0.1"
 				}
 
@@ -321,7 +661,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 663.0, 216.0, 182.0, 22.0 ],
+					"patching_rect" : [ 732.0, 81.0, 182.0, 22.0 ],
 					"text" : "jit.world metal_scene @enable 1"
 				}
 
@@ -334,7 +674,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 663.0, 146.0, 24.0, 24.0 ]
+					"patching_rect" : [ 732.0, 11.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -342,9 +682,9 @@
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 4,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.0, 204.0, 93.0, 22.0 ],
+					"patching_rect" : [ 294.0, 301.0, 93.0, 22.0 ],
 					"text" : "mesh_deformer"
 				}
 
@@ -356,7 +696,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 77.0, 292.0, 65.0, 22.0 ],
+					"patching_rect" : [ 412.0, 469.0, 65.0, 22.0 ],
 					"text" : "kick_hit $1"
 				}
 
@@ -368,7 +708,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 77.0, 250.0, 41.0, 22.0 ],
+					"patching_rect" : [ 346.0, 439.0, 41.0, 22.0 ],
 					"text" : "line 0."
 				}
 
@@ -380,7 +720,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 77.0, 204.0, 52.0, 22.0 ],
+					"patching_rect" : [ 146.0, 301.0, 52.0, 22.0 ],
 					"text" : "1, 0 200"
 				}
 
@@ -391,7 +731,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 74.0, 45.0, 45.0 ]
+					"patching_rect" : [ 10.0, 161.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -401,8 +741,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 3,
-					"outlettype" : [ "bang", "", "bang" ],
-					"patching_rect" : [ 77.0, 149.0, 81.0, 22.0 ],
+					"outlettype" : [ "bang", "", "" ],
+					"patching_rect" : [ 146.0, 256.0, 81.0, 22.0 ],
 					"text" : "audio_engine"
 				}
 
@@ -410,13 +750,25 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 92.0,
+					"clipheight" : 45.5,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "D:\\SONGS\\back-tracks-ready\\RAMM - ICH TU DIR WEH.wav",
-								"filename" : "RAMM - ICH TU DIR WEH.wav",
+								"absolutepath" : "D:\\SONGS\\un-stemed\\Wage War - KARMA (Official Visualizer) - 320.MP3",
+								"filename" : "Wage War - KARMA (Official Visualizer) - 320.MP3",
 								"filekind" : "audiofile",
-								"id" : "u005000612",
+								"id" : "u691298791",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "D:\\SONGS\\un-stemed\\THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
+								"filename" : "THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
+								"filekind" : "audiofile",
+								"id" : "u959306639",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
@@ -456,14 +808,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-90", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -473,6 +818,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-103", 0 ]
 				}
 
 			}
@@ -492,7 +844,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -500,14 +852,30 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -520,7 +888,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-2", 2 ]
 				}
 
@@ -548,8 +916,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -570,13 +959,36 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"order" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 2 ],
+					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
 					"order" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -584,7 +996,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-2", 2 ],
 					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -592,9 +1004,110 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-2", 1 ],
 					"order" : 2,
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 3,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 2 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 2 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 3 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -607,15 +1120,39 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-18", 0 ],
+					"order" : 2,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-69", 0 ],
 					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 2,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -624,6 +1161,30 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 1 ],
+					"order" : 4,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 1 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"order" : 3,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -644,18 +1205,47 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-99", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "RAMM - ICH TU DIR WEH.wav",
-				"bootpath" : "D:/SONGS/back-tracks-ready",
-				"type" : "WAVE",
+				"name" : "THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
+				"bootpath" : "D:/SONGS/un-stemed",
+				"patcherrelativepath" : "../../SONGS/un-stemed",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Wage War - KARMA (Official Visualizer) - 320.MP3",
+				"bootpath" : "D:/SONGS/un-stemed",
+				"patcherrelativepath" : "../../SONGS/un-stemed",
+				"type" : "Mp3",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio_engine.maxpat",
-				"bootpath" : "~/Documents/GitHub/PCON-proiect-final-MAX-NicolaeStefan/metal-visuals/patches",
+				"bootpath" : "D:/metal-visuals/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ddp_udp_sender.js",
+				"bootpath" : "D:/metal-visuals/patches",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -663,8 +1253,19 @@
 				"type" : "mx64"
 			}
 , 			{
+				"name" : "mc.jit.catch~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "mesh_deformer.maxpat",
-				"bootpath" : "~/Documents/GitHub/PCON-proiect-final-MAX-NicolaeStefan/metal-visuals/patches",
+				"bootpath" : "D:/metal-visuals/patches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "wled_controller.maxpat",
+				"bootpath" : "D:/metal-visuals/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
