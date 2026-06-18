@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1697.0, 921.0 ],
+		"rect" : [ 34.0, 77.0, 1403.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,135 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 511.0, 111.0, 55.0, 22.0 ],
+					"patching_rect" : [ 486.0, 126.0, 55.0, 22.0 ],
 					"text" : "adc~ 1 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 24.0, 183.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 16.0, 183.0, 27.0 ],
+					"text" : "Metal Visuals"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-202",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 54.0, 301.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 42.0, 301.0, 20.0 ],
+					"text" : "Load a song, then arm audio and visuals."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-201",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 90.0, 40.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 74.0, 40.0, 20.0 ],
+					"text" : "Track"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-200",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 210.0, 320.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 580.0, 74.0, 50.0, 20.0 ],
+					"text" : "Audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-205",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 234.0, 55.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 664.0, 74.0, 55.0, 20.0 ],
+					"text" : "Visuals"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 258.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 740.0, 74.0, 75.0, 20.0 ],
+					"text" : "Rorschach"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 282.0, 45.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 824.0, 74.0, 45.0, 20.0 ],
+					"text" : "WLED"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-207",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 306.0, 55.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 898.0, 74.0, 55.0, 20.0 ],
+					"text" : "Overlay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-206",
+					"fontsize" : 12.0,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 330.0, 50.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 982.0, 74.0, 50.0, 20.0 ],
+					"text" : "Debris"
 				}
 
 			}
@@ -88,6 +215,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 25.5, 380.0, 64.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 820.0, 102.0, 76.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -218,7 +347,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1097.0, 569.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1097.0, 569.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 914.0, 102.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -326,7 +457,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 74.0, 554.0, 24.0, 24.0 ]
+					"patching_rect" : [ 74.0, 554.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 992.0, 102.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -374,7 +507,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1022.0, 396.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1022.0, 396.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 760.0, 102.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -421,7 +556,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 538.0, 301.0, 45.0, 22.0 ],
+					"patching_rect" : [ 576.0, 295.0, 45.0, 22.0 ],
 					"text" : "1, 0 80"
 				}
 
@@ -466,11 +601,11 @@
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 542.0, 602.0, 107.0, 22.0 ],
-					"text" : "scale 0 99 -0.1 0.1"
+					"text" : "* 0.035"
 				}
 
 			}
@@ -478,11 +613,11 @@
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 412.0, 602.0, 107.0, 22.0 ],
-					"text" : "scale 0 99 -0.1 0.1"
+					"text" : "* -0.08"
 				}
 
 			}
@@ -674,7 +809,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 732.0, 11.0, 24.0, 24.0 ]
+					"patching_rect" : [ 732.0, 11.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 676.0, 102.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -731,7 +868,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 161.0, 45.0, 45.0 ]
+					"patching_rect" : [ 53.0, 142.0, 45.0, 45.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 580.0, 96.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -750,25 +889,13 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 45.5,
+					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "D:\\SONGS\\un-stemed\\Wage War - KARMA (Official Visualizer) - 320.MP3",
-								"filename" : "Wage War - KARMA (Official Visualizer) - 320.MP3",
+								"absolutepath" : "Z:\\tidaldl\\Set It Off\\2025 - Set It Off\\04. Switch.flac",
+								"filename" : "04. Switch.flac",
 								"filekind" : "audiofile",
-								"id" : "u691298791",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "D:\\SONGS\\un-stemed\\THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
-								"filename" : "THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
-								"filekind" : "audiofile",
-								"id" : "u959306639",
+								"id" : "u880013950",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
@@ -791,6 +918,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 146.0, 11.0, 529.0, 93.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 96.0, 520.0, 108.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -808,7 +937,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
+					"destination" : [ "obj-4", 1 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -816,8 +945,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 2,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"order" : 3,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-10", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -838,7 +983,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-13", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -911,20 +1056,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"source" : [ "obj-22", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -1051,7 +1182,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 3 ],
-					"source" : [ "obj-35", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1151,25 +1282,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 2,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"order" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-38", 1 ],
-					"order" : 4,
-					"source" : [ "obj-8", 0 ]
+					"order" : 2,
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -1221,17 +1336,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "THE PRETTY WILD - sLeepwALKeR (Official Music Video) - 320.MP3",
-				"bootpath" : "D:/SONGS/un-stemed",
-				"patcherrelativepath" : "../../SONGS/un-stemed",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Wage War - KARMA (Official Visualizer) - 320.MP3",
-				"bootpath" : "D:/SONGS/un-stemed",
-				"patcherrelativepath" : "../../SONGS/un-stemed",
-				"type" : "Mp3",
+				"name" : "04. Switch.flac",
+				"bootpath" : "Z:/tidaldl/Set It Off/2025 - Set It Off",
+				"type" : "FLAC",
 				"implicit" : 1
 			}
 , 			{
